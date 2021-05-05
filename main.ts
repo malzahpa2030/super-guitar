@@ -5,9 +5,11 @@ input.onButtonPressed(Button.A, function () {
     E = E / 2
 })
 input.onPinPressed(TouchPin.P2, function () {
+    basic.showIcon(IconNames.EigthNote)
     music.playTone(A, music.beat(BeatFraction.Half))
     music.playTone(C, music.beat(BeatFraction.Half))
     music.playTone(E, music.beat(BeatFraction.Half))
+    basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
     F = F * 2
@@ -16,9 +18,11 @@ input.onButtonPressed(Button.B, function () {
     E = E * 2
 })
 input.onPinPressed(TouchPin.P1, function () {
+    basic.showIcon(IconNames.QuarterNote)
     music.playTone(F, music.beat(BeatFraction.Half))
     music.playTone(A, music.beat(BeatFraction.Half))
     music.playTone(C, music.beat(BeatFraction.Half))
+    basic.clearScreen()
 })
 let E = 0
 let C = 0
