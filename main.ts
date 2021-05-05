@@ -32,3 +32,4 @@ F = 349
 A = 440
 C = 523
 E = 659
+basic.showNumber(0)
